@@ -1,5 +1,6 @@
 package com.axichise.alarmapp
 
+import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,6 +17,8 @@ class AlarmOnActivity : AppCompatActivity() {
         var stopButton = findViewById<Button>(R.id.btn2)
         stopButton.setOnClickListener {
             mp.stop()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
