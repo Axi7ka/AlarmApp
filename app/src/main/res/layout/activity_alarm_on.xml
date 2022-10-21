@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlarmOnActivity">
+    tools:context=".AlarmOnActivity"
+    android:background="@drawable/gradient_background">
 
     <TextView
         android:id="@+id/tv2"
@@ -15,7 +16,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="250dp"
-        android:textSize="24dp">
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="36dp">
     </TextView>
     <Button
         android:id="@+id/btn2"
